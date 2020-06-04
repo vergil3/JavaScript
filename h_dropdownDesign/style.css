@@ -1,0 +1,54 @@
+/*remove browser styling*/
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+  }
+
+/*remove browser styling in IE*/
+select::-ms-expand {
+    display: none;
+}
+
+.select-wrapper::before {
+    font-family: fontello;
+    content: '\f107';
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #fff;
+    pointer-events: none;
+  }
+
+/*select list*/
+.select-wrapper{
+    width: 200px;
+    position: relative;
+
+}
+
+body{
+    background-color: cadetblue;
+}
+
+select {
+    /* ... */
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    background: url(fff-0-2.png) repeat;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.3);
+    border-radius: 3px;
+    outline: none;
+  }
+
+/*Select Options*/
+  select option {
+    color: #666;
+  }
+
